@@ -8,6 +8,8 @@ services:
     restart: always
     ports:
       - 3306:3306
+    networks: 
+      - webnet
     environment:
       MYSQL_ROOT_PASSWORD: example
 
@@ -16,3 +18,8 @@ services:
     restart: always
     ports:
       - 8080:8080
+    networks:
+      - webnet
+
+networks:
+  webnet:
