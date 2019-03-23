@@ -1,0 +1,12 @@
+[package]
+name = "student-management-system-backend"
+version = "0.1.0"
+authors = ["sundoge"]
+edition = "2018"
+
+[dependencies]
+actix = "0.7"
+actix-web = "0.7"
+diesel = { version = "1.4", features = ["mysql", "r2d2"] }
+dotenv = "0.13"
+r2d2 = "0.8"
