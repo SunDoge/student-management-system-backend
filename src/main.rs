@@ -1,9 +1,19 @@
 #[macro_use]
 extern crate diesel;
+#[macro_use]
+extern crate failure;
+#[macro_use]
+extern crate serde_derive;
+#[macro_use]
+extern crate serde_json;
 
 mod app;
+mod department_handler;
+mod department_routes;
+mod errors;
 mod models;
 mod schema;
+mod student_handler;
 mod student_routes;
 
 use crate::models::DbExecutor;

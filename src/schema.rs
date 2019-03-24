@@ -20,7 +20,4 @@ table! {
 
 joinable!(student -> department (department));
 
-allow_tables_to_appear_in_same_query!(
-    department,
-    student,
-);
+allow_tables_to_appear_in_same_query!(department, student,);

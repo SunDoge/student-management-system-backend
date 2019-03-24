@@ -14,5 +14,6 @@ pub fn create_app(db: Addr<DbExecutor>) -> App<AppState> {
             api.resource("/students", |r| {
                 r.method(Method::GET).with(fetch_all_students);
             })
+            .resource("/departments", |r| {})
         })
 }
